@@ -1,0 +1,119 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "MovieName": "AVENGERS-THE END GAME",
+      "MovieLanguage": "English"
+    },
+    {
+      "id": 2,
+      "MovieName": "SPIDERMAN-NO WAY HOME",
+      "MovieLanguage": "English"
+    },
+    {
+      "id": 3,
+      "MovieName": "KGF-2",
+      "MovieLanguage": "Telugu"
+    },
+    {
+      "id": 4,
+      "MovieName": "JAILER",
+      "MovieLanguage": "Tamil"
+    },
+    {
+      "id": 5,
+      "MovieName": "OPPEN HEIMER",
+      "MovieLanguage": "English"
+    },
+    {
+      "MovieName": "RRR",
+      "id": 6,
+      "MovieLanguage": "Telugu"
+    }
+  ],
+  "signupUser": [
+    {
+      "name": "Lokesh",
+      "mobile": 9494077995,
+      "email": "admin@gmail.com",
+      "password": "password",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "name": "test test",
+      "email": "test@gmail.com",
+      "password": "test",
+      "id": 2
+    },
+    {
+      "name": "vijay thala",
+      "email": "vijay",
+      "password": "vijay",
+      "id": 3
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "name": "AVENGERS-THE END GAME",
+      "language": "English",
+      "image": "https://cdn.marvel.com/content/1x/ae_digital_packshot.jpg"
+    },
+    {
+      "id": 2,
+      "name": "SPIDERMAN-NO WAY HOME",
+      "language": "English",
+      "image": "https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 3,
+      "name": "SALAAR",
+      "language": "TELUGU",
+      "image": "https://w0.peakpx.com/wallpaper/166/296/HD-wallpaper-salaar-prabas-telugu-movie.jpg"
+    },
+    {
+      "id": 4,
+      "name": "JAILER",
+      "language": "TAMIL",
+      "image": "https://static.toiimg.com/photo/msid-102602413/102602413.jpg?963075"
+    },
+    {
+      "id": 5,
+      "name": "OPPEN HEIMER",
+      "language": "English",
+      "image": "https://assets-prd.ignimgs.com/2022/07/21/oppenheimer-poster-1658411601593.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "RRR",
+      "language": "Telugu",
+      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a726230d-0a0e-427c-837b-0a14e8e2f7ca/df60q75-2a41f1c6-7830-44dd-8d25-4229e1d8eb4f.jpg/v1/fill/w_1280,h_1902,q_75,strp/rrr_poster_by_kanthi7_df60q75-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkwMiIsInBhdGgiOiJcL2ZcL2E3MjYyMzBkLTBhMGUtNDI3Yy04MzdiLTBhMTRlOGUyZjdjYVwvZGY2MHE3NS0yYTQxZjFjNi03ODMwLTQ0ZGQtOGQyNS00MjI5ZTFkOGViNGYuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.VyhEAgf1Z8WwwJYBDyTOs-gHz45LOuP-FIFmeyvohZI"
+    }
+  ],
+  "Movieslist": [
+    {
+      "Movie_id": 1,
+      "MovieName": "AVENGERS-THE END GAME",
+      "MovieLanguage": "English"
+    },
+    {
+      "Movie_id": 2,
+      "MovieName": "SPIDERMAN-NO WAY HOME",
+      "MovieLanguage": "English"
+    },
+    {
+      "Movie_id": 3,
+      "MovieName": "KGF-2",
+      "MovieLanguage": "Telugu"
+    },
+    {
+      "Movie_id": 4,
+      "MovieName": "RRR",
+      "MovieLanguage": "Telugu"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

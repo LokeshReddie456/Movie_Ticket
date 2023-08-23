@@ -1,0 +1,64 @@
+<nav class="navbar navbar-light bg-transparent header">
+    <div class="container-fluid">
+        <h1 style="color: alicblue; font-family: 'Pacifico', cursive;">Movie List</h1>
+        <div class="d-flex">
+            <button (click)="showAddForm()" type="button" class="btn btn-success">Add Movie</button>
+            <button routerLink="/login" class="btn btn-danger mx-2">Logout</button>
+        </div>
+    </div>
+</nav>
+
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col">Movie ID</th>
+            <th scope="col">Movie Name</th>
+            <th scope="col">Movie Language</th>
+            <th scope="col">Update/Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of MovieDetails">
+            <td>{{row.id}}</td>
+            <td>{{row.MovieName}}</td>
+            <td>{{row.MovieLanguage}}</td>
+            <td>
+                <button (click)="showUpdateForm(row)" style="color:aliceblue;" class="btn btn-info">Update</button>
+                <button (click)="deleteMovie(row)" class="btn btn-danger mx-3">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">{{ showAdd ? 'Add Movie' : 'Update Movie' }}</h1> -->
+            </div>
+            <br />
+            <div class="modal-body" *ngIf="showAdd || showUpdate">
+                <form [formGroup]="formValue">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Movie Name</label>
+                        <input type="text" formControlName="MovieName" class="form-control" id="exampleInputEmail1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Movie Language</label>
+                        <input type="text" formControlName="MovieLanguage" class="form-control"
+                            id="exampleInputPassword1">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer" *ngIf="showAdd || showUpdate">
+                <button type="button" id="cancel" (click)="cancelForm()" class="btn btn-secondary"
+                    data-bs-dismiss="modal">Close</button>
+                <button type="button" *ngIf="showAdd" (click)="postMovieDetails()" class="btn btn-primary">Add
+                    Movie</button>
+                <button type="button" *ngIf="showUpdate" (click)="updateMovieDetails()"
+                    class="btn btn-primary">Update</button>
+            </div>
+        </div>
+    </div>
+</div>

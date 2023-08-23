@@ -1,0 +1,70 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "MovieName": "AVENGERS-THE END GAME",
+        "MovieLanguage":"English"
+      },
+      {
+        "id": 2,
+        "MovieName": "SPIDERMAN-NO WAY HOME",
+        "MovieLanguage":"English"
+      },
+      {
+        "id": 3,
+        "MovieName": "KGF-2",
+        "MovieLanguage":"Telugu"
+      },
+      {
+        "id": 4,
+        "MovieName": "RRR",
+        "MovieLanguage":"Telugu"
+      }
+    ],
+    "signupUser": [
+      {
+        "name": "Lokesh",
+        "mobile": 9494077995,
+        "email": "admin@gmail.com",
+        "password": "password",
+        "role": "admin",
+        "id": 1
+      }
+    ],
+      "User": [
+
+        {
+    
+          "Firstname": "jenni",   
+          "Lastname": "lopez",
+          "Email": "jenni@gmail.com",
+          "Password": "password"
+        }
+      
+    ],
+    "Movieslist": [
+      {
+        "Movie_id": 1,
+        "MovieName": "AVENGERS-THE END GAME",
+        "MovieLanguage":"English"
+      },
+      {
+        "Movie_id": 2,
+        "MovieName": "SPIDERMAN-NO WAY HOME",
+        "MovieLanguage":"English"
+      },
+      {
+        "Movie_id": 3,
+        "MovieName": "KGF-2",
+        "MovieLanguage":"Telugu"
+      },
+      {
+        "Movie_id": 4,
+        "MovieName": "RRR",
+        "MovieLanguage":"Telugu"
+      }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }

@@ -1,0 +1,94 @@
+/* Reset default styles and set font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Apply background GIF image to the body */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://cdn.pixabay.com/photo/2017/06/02/22/01/dog-2367414_1280.png'); /* Replace with your image URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ba9d9ddd;
+}
+
+/* Center the container horizontally and vertically */
+.container {
+    background-color: rgba(203, 18, 18, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    color: #333;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Style the content within the container */
+.box {
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(94, 94, 241);
+}
+
+/* Style input fields */
+input {
+    margin: 16px;
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    background: #21292c;
+}
+
+input:hover {
+    border: 2px solid rgb(53, 53, 163);
+    width: 230px;
+    transition: all 0.7s;
+}
+
+/* Style buttons */
+.btn {
+    width: 120px;
+    height: 40px;
+    border: 2px solid rgb(201, 197, 197);
+    background: none;
+    color: white;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+/* Style links */
+p a {
+    text-decoration: none;
+    font-size: 22px;
+    color: red;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+p a:hover {
+    color: #c0392b;
+}
+
+/* Define the hue rotation animation */
+@keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

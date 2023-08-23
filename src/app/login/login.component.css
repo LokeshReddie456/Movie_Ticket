@@ -1,0 +1,68 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h5, label {
+  color: white;
+}
+
+/* Add styles to the form container */
+.container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Set container height to full viewport height */
+  background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW92aWUlMjB0aWNrZXRzfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  /* background: rgba(234, 227, 227, 0.97); */
+  border-radius: 5px;
+  outline: none;
+  color: black;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  /* background-color: rgba(255, 255, 255, 1); */
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: hsl(211, 90%, 40%);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* Additional styles for the form container */
+.form-container {
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  /* color: white; */
+}

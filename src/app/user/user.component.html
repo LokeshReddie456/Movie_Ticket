@@ -1,0 +1,48 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies List</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="mx-auto">
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="navbar-brand align-item-center d-flex ">
+                    <i style="font-size: 30px;" class="fa fa-film">&nbsp;</i>
+                    <strong style="font-size: 20px;">Movies List</strong>
+                </div>
+                <div>
+                    <button class="logout-button" (click)="logout()">Logout</button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="movie-container">
+            <ng-container *ngFor="let movie of user">
+                <div class="movie-card">
+                    <img src="{{movie.image}}" alt="{{movie.name}}">
+                    <div class="movie-details">
+                        <i style="font-size: 15px;" class="fa fa-film p-8">&nbsp;
+                            <!-- <strong class="movie-name">{{movie.name}}</strong> -->
+                            <h4 class="mt-3 text-slate-600 font-bold">
+                                {{movie.name}}
+                            </h4>
+                            <i class="fa fa-language p-0" aria-hidden="true">&nbsp;
+                                <!-- <strong class="movie-language">Language</strong> -->
+                                <h5 class="mt-3 text-slate-600 font-semi-bold">
+                                    {{movie.language}}
+                                </h5>
+                            </i>
+                        </i>
+                    </div>
+                    <button class="book-button">Book Ticket</button>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</body>

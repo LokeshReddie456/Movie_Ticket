@@ -1,0 +1,29 @@
+<div class="bg-img">
+    <div class="login-box">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-">
+            <div class="card">
+                <div class="center">
+                    <h1>Login</h1>
+                    <h5>Please Enter your login credentials</h5>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">User ID</label>
+                          <input formControlName="name" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Username">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+                </form>
+                <br />
+                <strong style="color:white">New User? </strong> <a style="color:white;margin-top:10px" routerLink="/register">SignUp</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
