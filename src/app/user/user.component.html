@@ -25,22 +25,28 @@
         <div class="movie-container">
             <ng-container *ngFor="let movie of user">
                 <div class="movie-card">
-                    <img src="{{movie.image}}" alt="{{movie.name}}">
+                    <img src="{{movie.PosterURL}}" alt="{{movie.MovieName}}">
                     <div class="movie-details">
                         <i style="font-size: 15px;" class="fa fa-film p-8">&nbsp;
                             <!-- <strong class="movie-name">{{movie.name}}</strong> -->
                             <h4 class="mt-3 text-slate-600 font-bold">
-                                {{movie.name}}
+                                {{movie.MovieName}}
                             </h4>
                             <i class="fa fa-language p-0" aria-hidden="true">&nbsp;
                                 <!-- <strong class="movie-language">Language</strong> -->
                                 <h5 class="mt-3 text-slate-600 font-semi-bold">
-                                    {{movie.language}}
+                                    {{movie.MovieLanguage}}
                                 </h5>
                             </i>
                         </i>
                     </div>
-                    <button class="book-button">Book Ticket</button>
+                    <a routerLink="/seats">
+                        <button class="book-button">
+                            Book Ticket
+                        </button>
+                    </a>
+                    
+                    <!-- <button class="book-button"routerLink="/seats">Book Ticket</button> -->
                 </div>
             </ng-container>
         </div>

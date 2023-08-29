@@ -1,8 +1,8 @@
 export interface Movie
 {
-    name:string;
-    language:string;
-    image:string;
+    MovieName:string;
+    MovieLanguage:string;
+    PosterURL:string;
 }
 
  

@@ -8,28 +8,24 @@
     </div>
 </nav>
 
+<div class="movie-container">
+    <div class="movie-list" *ngFor="let row of MovieDetails">
+        <div class="movie-card">
+            <div class="movie-image">
+                <img *ngIf="row.PosterURL" [src]="row.PosterURL" alt="{{ row.MovieName }} Poster">
+            </div>
+            <div class="movie-details">
+                <h5 class="movie-name">{{ row.MovieName }}</h5>
+                <p class="movie-language">{{ row.MovieLanguage }}</p>
+                <div class="buttons">
+                    <button (click)="showUpdateForm(row)" class="update-button">Update</button>
+                    <button (click)="deleteMovie(row)" class="delete-button">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<table class="table mt-3">
-    <thead>
-        <tr>
-            <th scope="col">Movie ID</th>
-            <th scope="col">Movie Name</th>
-            <th scope="col">Movie Language</th>
-            <th scope="col">Update/Delete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let row of MovieDetails">
-            <td>{{row.id}}</td>
-            <td>{{row.MovieName}}</td>
-            <td>{{row.MovieLanguage}}</td>
-            <td>
-                <button (click)="showUpdateForm(row)" style="color:aliceblue;" class="btn btn-info">Update</button>
-                <button (click)="deleteMovie(row)" class="btn btn-danger mx-3">Delete</button>
-            </td>
-        </tr>
-    </tbody>
-</table>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -48,6 +44,11 @@
                         <label for="exampleInputPassword1" class="form-label">Movie Language</label>
                         <input type="text" formControlName="MovieLanguage" class="form-control"
                             id="exampleInputPassword1">
+                    </div>
+                    <!-- Add Poster URL field -->
+                    <div class="mb-3">
+                        <label for="posterURL" class="form-label">Poster URL</label>
+                        <input type="text" formControlName="PosterURL" class="form-control" id="posterURL">
                     </div>
                 </form>
             </div>

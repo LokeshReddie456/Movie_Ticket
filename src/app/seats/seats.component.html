@@ -1,0 +1,184 @@
+<html>
+<div class="body">
+    <div class="container">
+        <div>
+            <div class="inputform">
+                <h2>Select your seats</h2>
+                <div >
+                    <label>Number of Seats</label>
+                    <input type="number" id="Numseats" [(ngModel)]="model.Numseats" required min="1">
+                </div>
+            </div>
+            <div class="part1">
+                <tr>
+                    <td rowspan="20">
+                        <div class="smallBox greenBox">Selected Seat</div><br/>
+                        <div class="smallBox redBox">Booked Seat</div><br/>
+                        <div class="smallBox emptyBox">Empty Seat</div><br/>
+                    </td>
+                    <br/>
+                </tr>
+            </div>
+            <div class="part2">
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+           
+                <tr>
+                    <td>G</td>
+                    <td><input type="checkbox" id="G1" (click)="selectSeat('G1')"></td>
+                    <td><input type="checkbox" id="G2" (click)="selectSeat('G2')"></td>
+                    <td><input type="checkbox" id="G3" (click)="selectSeat('G3')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" id="G4" (click)="selectSeat('G4')"></td>
+                    <td><input type="checkbox" id="G5" (click)="selectSeat('G5')"></td>
+                    <td><input type="checkbox" id="G6" (click)="selectSeat('G6')"></td>
+                    <td><input type="checkbox" id="G7" (click)="selectSeat('G7')"></td>
+                    <td><input type="checkbox" id="G8" (click)="selectSeat('G8')"></td>
+                    <td><input type="checkbox" id="G9" (click)="selectSeat('G9')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" id="G10" (click)="selectSeat('G10')"></td>
+                    <td><input type="checkbox" id="G11" (click)="selectSeat('G11')"></td>
+                    <td><input type="checkbox" id="G12" (click)="selectSeat('G12')"></td>
+                </tr>
+               
+                <tr>
+                    <td>F</td>
+                    <td><input type="checkbox" value="F1" (click)="selectSeat('F1')"></td>
+                    <td><input type="checkbox" value="F2" (click)="selectSeat('F2')"></td>
+                    <td><input type="checkbox" value="F3" (click)="selectSeat('F3')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" value="F4" (click)="selectSeat('F4')"></td>
+                    <td><input type="checkbox" value="F5" (click)="selectSeat('F5')"></td>
+                    <td><input type="checkbox" value="F6" (click)="selectSeat('F6')"></td>
+                    <td><input type="checkbox" value="F7" (click)="selectSeat('F7')"></td>
+                    <td><input type="checkbox" value="F8" (click)="selectSeat('F8')"></td>
+                    <td><input type="checkbox" value="F9" (click)="selectSeat('F9')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" value="F10" (click)="selectSeat('F10')"></td>
+                    <td><input type="checkbox" value="F11" (click)="selectSeat('F11')"></td>
+                    <td><input type="checkbox" value="F12" (click)="selectSeat('F12')"></td>
+                </tr>
+           
+                <tr>
+                    <td>E</td>
+                    <td><input type="checkbox" value="E1" (click)="selectSeat('E1')"></td>
+                    <td><input type="checkbox" value="E2" (click)="selectSeat('E2')"></td>
+                    <td><input type="checkbox" value="E3" (click)="selectSeat('E3')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" value="E4" (click)="selectSeat('E4')"></td>
+                    <td><input type="checkbox" value="E5" (click)="selectSeat('E5')"></td>
+                    <td><input type="checkbox" value="E6" (click)="selectSeat('E6')"></td>
+                    <td><input type="checkbox" value="E7" (click)="selectSeat('E7')"></td>
+                    <td><input type="checkbox" value="E8" (click)="selectSeat('E8')"></td>
+                    <td><input type="checkbox" value="E9" (click)="selectSeat('E9')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" value="E10" (click)="selectSeat('E10')"></td>
+                    <td><input type="checkbox" value="E11" (click)="selectSeat('E11')"></td>
+                    <td><input type="checkbox" value="E12" (click)="selectSeat('E12')"></td>
+                </tr>
+           
+                <tr>
+                    <td>D</td>
+                    <td><input type="checkbox" value="D1" (click)="selectSeat('D1')"></td>
+                    <td><input type="checkbox" value="D2" (click)="selectSeat('D2')"></td>
+                    <td><input type="checkbox" value="D3" (click)="selectSeat('D3')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" value="D4" (click)="selectSeat('D4')"></td>
+                    <td><input type="checkbox" value="D5" (click)="selectSeat('D5')"></td>
+                    <td><input type="checkbox" value="D6" (click)="selectSeat('D6')"></td>
+                    <td><input type="checkbox" value="D7" (click)="selectSeat('D7')"></td>
+                    <td><input type="checkbox" value="D8" (click)="selectSeat('D8')"></td>
+                    <td><input type="checkbox" value="D9" (click)="selectSeat('D9')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" value="D10" (click)="selectSeat('D10')"></td>
+                    <td><input type="checkbox" value="D11" (click)="selectSeat('D11')"></td>
+                    <td><input type="checkbox" value="D12" (click)="selectSeat('D12')"></td>
+                    <br/><br/><br/>
+                </tr>
+           
+                <tr>
+                    <td>C</td>
+                    <td><input type="checkbox" value="C1" (click)="selectSeat('C1')"></td>
+                    <td><input type="checkbox" value="C2" (click)="selectSeat('C2')"></td>
+                    <td><input type="checkbox" value="C3" (click)="selectSeat('C3')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" value="C4" (click)="selectSeat('C4')"></td>
+                    <td><input type="checkbox" value="C5" (click)="selectSeat('C5')"></td>
+                    <td><input type="checkbox" value="C6" (click)="selectSeat('C6')"></td>
+                    <td><input type="checkbox" value="C7" (click)="selectSeat('C7')"></td>
+                    <td><input type="checkbox" value="C8" (click)="selectSeat('C8')"></td>
+                    <td><input type="checkbox" value="C9" (click)="selectSeat('C9')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" value="C10" (click)="selectSeat('C10')"></td>
+                    <td><input type="checkbox" value="C11" (click)="selectSeat('C11')"></td>
+                    <td><input type="checkbox" value="C12" (click)="selectSeat('C12')"></td>
+                </tr>
+               
+                <tr>
+                    <td>B</td>
+                    <td><input type="checkbox" value="B1" (click)="selectSeat('B1')"></td>
+                    <td><input type="checkbox" value="B2" (click)="selectSeat('B2')"></td>
+                    <td><input type="checkbox" value="B3" (click)="selectSeat('B3')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" value="B4" (click)="selectSeat('B4')"></td>
+                    <td><input type="checkbox" value="B5" (click)="selectSeat('B5')"></td>
+                    <td><input type="checkbox" value="B6" (click)="selectSeat('B6')"></td>
+                    <td><input type="checkbox" value="B7" (click)="selectSeat('B7')"></td>
+                    <td><input type="checkbox" value="B8" (click)="selectSeat('B8')"></td>
+                    <td><input type="checkbox" value="B9" (click)="selectSeat('B9')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" value="B10" (click)="selectSeat('B10')"></td>
+                    <td><input type="checkbox" value="B11" (click)="selectSeat('B11')"></td>
+                    <td><input type="checkbox" value="B12" (click)="selectSeat('B12')"></td>
+                </tr>
+           
+                <tr>
+                    <td>A</td>
+                    <td><input type="checkbox" value="A1" (click)="selectSeat('A1')"></td>
+                    <td><input type="checkbox" value="A2" (click)="selectSeat('A2')"></td>
+                    <td><input type="checkbox" value="A3" (click)="selectSeat('A3')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" value="A4" (click)="selectSeat('A4')"></td>
+                    <td><input type="checkbox" value="A5" (click)="selectSeat('A5')"></td>
+                    <td><input type="checkbox" value="A6" (click)="selectSeat('A6')"></td>
+                    <td><input type="checkbox" value="A7" (click)="selectSeat('A7')"></td>
+                    <td><input type="checkbox" value="A8" (click)="selectSeat('A8')"></td>
+                    <td><input type="checkbox" value="A9" (click)="selectSeat('A9')"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="checkbox" value="A10" (click)="selectSeat('A10')"></td>
+                    <td><input type="checkbox" value="A11" (click)="selectSeat('A11')"></td>
+                    <td><input type="checkbox" value="A12" (click)="selectSeat('A12')"></td>
+                </tr>
+                           
+                <td colspan="16">
+                    <div class="screen"><h3>Screen</h3></div>    
+                </td>
+            </div>
+            <div class="part3">
+                <div><h3>No.of Seats selected = {{model.Numseats}}</h3></div>
+                <div><h3>Each Ticket Price = 150</h3></div>
+                <div><h3>Total Price = Rs.{{amount}}</h3></div>
+                <div>{{model.seats}}</div>
+            </div>
+        </div>
+    </div>
+   
+<!-- </div>
+<button type="submit" class="btn" (click)="GetBill()" >Payment</button>
+<button type="submit" class="btn" (click)="GetFood()" >Food&Beverages</button>
+</html> -->

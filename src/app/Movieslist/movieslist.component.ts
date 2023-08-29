@@ -15,13 +15,16 @@ export class MovieslistComponent implements OnInit {
   showAdd: boolean = false;
   showUpdate: boolean = false;
 
+  selectedFile!: File;
+
   constructor(private formbuilder: FormBuilder, private movie: MovieService) { }
 
   ngOnInit(): void {
     this.formValue = this.formbuilder.group({
       id: [''],
       MovieName: [''],
-      MovieLanguage: ['']
+      MovieLanguage: [''],
+      PosterURL: [''] // Add the PosterURL field to the form
     });
     this.getMovieDetails();
   }
@@ -46,27 +49,12 @@ export class MovieslistComponent implements OnInit {
     this.showUpdate = update;
   }
 
-  clickAddMovie() {
-
-    this.formValue.reset();
-    this.showAdd = true;
-    this.showUpdate = true;
-
-  }
-
-  onEdit(row: any) {
-
-    this.showAdd = false;
-    this.showUpdate = true;
-    this.MovieModelObj.id = row.id;
-
-    this.formValue.controls['MovieName'].setValue(row.MovieName);
-
-  }
+  
 
   postMovieDetails() {
     this.MovieModelObj.MovieName = this.formValue.value.MovieName;
     this.MovieModelObj.MovieLanguage = this.formValue.value.MovieLanguage;
+    this.MovieModelObj.PosterURL = this.formValue.value.PosterURL; // Assign the poster URL
 
     this.movie.postMovie(this.MovieModelObj).subscribe((res: any) => {
       console.log(res);
@@ -93,6 +81,7 @@ export class MovieslistComponent implements OnInit {
     this.MovieModelObj.id = this.formValue.value.id;
     this.MovieModelObj.MovieName = this.formValue.value.MovieName;
     this.MovieModelObj.MovieLanguage = this.formValue.value.MovieLanguage;
+    this.MovieModelObj.PosterURL = this.formValue.value.PosterURL; // Assign the poster URL
 
     this.movie.updateMovie(this.MovieModelObj, this.MovieModelObj.id).subscribe(() => {
       alert('Movie updated successfully');

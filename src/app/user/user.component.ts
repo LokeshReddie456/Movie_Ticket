@@ -32,8 +32,7 @@ export class UserComponent implements OnInit {
   }
 
   logout() {
-    // Perform logout actions here (e.g., clear session, tokens, etc.)
-    // Then navigate to the login page
+
     this.router.navigate(['login']);
   }
 }

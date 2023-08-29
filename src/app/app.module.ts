@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 // import { SignupComponent } from './signup/signup.component';
 import { UserComponent } from './user/user.component';
 import { RegisterComponent } from './register/register.component';
+import { SeatsComponent } from './seats/seats.component';
 // import { DashboardComponent } from './dashboard/dashboard.component';
 
 
@@ -22,7 +23,8 @@ import { RegisterComponent } from './register/register.component';
     LoginComponent,
     // SignupComponent,
     UserComponent,
-    RegisterComponent
+    RegisterComponent,
+    SeatsComponent
     // DashboardComponent
   ],
 

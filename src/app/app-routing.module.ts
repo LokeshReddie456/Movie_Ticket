@@ -5,7 +5,8 @@ import { MovieslistComponent } from './Movieslist/movieslist.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
-// import { SignupComponent } from './signup/signup.component';
+import { SeatsComponent } from './seats/seats.component';
+
 
 const routes: Routes = [
   {path:'',redirectTo:'login',pathMatch:'full'},
@@ -13,7 +14,7 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'list',component:MovieslistComponent},
   {path:'user',component:UserComponent},
-  // {path:'dashboard',component:DashboardComponent},
+  {path:'seats',component:SeatsComponent},
   {path:'Movieslist',component:MovieslistComponent}]
 
 
