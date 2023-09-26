@@ -35,9 +35,30 @@ input[type=text], input[type=password] {
   color: black;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-  /* background-color: rgba(255, 255, 255, 1); */
+/* ... Previous CSS code ... */
+
+/* Customize the alert box */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
 }
+
+/* Style for a danger alert (red background) */
+.alert-danger {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+/* ... Rest of your CSS code ... */
+
+
+
+  /* background-color: rgba(255, 255, 255, 1); */
+
 
 /* Set a style for the submit button */
 .btn {

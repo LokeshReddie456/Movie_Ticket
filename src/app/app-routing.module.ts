@@ -6,7 +6,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
 import { SeatsComponent } from './seats/seats.component';
-
+import { TimeComponent } from './time/time.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PaymentSuccessComponent } from './payment-success/payment-success.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'login',pathMatch:'full'},
@@ -15,6 +17,10 @@ const routes: Routes = [
   {path:'list',component:MovieslistComponent},
   {path:'user',component:UserComponent},
   {path:'seats',component:SeatsComponent},
+  {path:'time',component:TimeComponent},
+  {path:'payment',component:PaymentComponent},
+  {path:'payment-success',component:PaymentSuccessComponent},
+  { path: '', redirectTo: '/payment', pathMatch: 'full' },
   {path:'Movieslist',component:MovieslistComponent}]
 
 

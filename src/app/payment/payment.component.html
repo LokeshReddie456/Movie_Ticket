@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="payment">
+        <h2>Payment Details</h2>
+        <p>Selected Movie: {{ MovieName}}</p>
+        <p>Show Timings: {{ showTimings }}</p>
+        <p>Selected Seats: {{ selectedSeats }}</p>
+        <p>Total Amount: Rs. {{ totalAmount }}</p>
+
+        <!-- Payment Method Selection -->
+        <!-- ... (rest of the code remains the same) -->
+
+
+        <!-- Payment Method Selection -->
+        <div>
+            <label for="paymentMethod">Select Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod" [(ngModel)]="selectedPaymentMethod">
+                <option value="cash">Cash On Delivery</option>
+                <option value="upi">UPI Payment</option>
+                <option value="card">Card Payment</option>
+            </select>
+        </div>
+
+        <!-- Payment Form based on Selected Payment Method -->
+        <div *ngIf="selectedPaymentMethod === 'cash'">
+            <!-- Cash On Delivery form or instructions -->
+            <p>Please keep cash ready for the delivery.</p>
+        </div>
+        <div *ngIf="selectedPaymentMethod === 'upi'">
+            <!-- UPI Payment form -->
+            <label for="upiId">UPI ID:</label>
+            <input type="text" id="upiId" name="upiId" ngModel required placeholder="Enter UPI ID">
+        </div>
+        <div *ngIf="selectedPaymentMethod === 'card'">
+            <!-- Card Payment form -->
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" ngModel required>
+
+            <label for="cardHolder">Card Holder Name:</label>
+            <input type="text" id="cardHolder" name="cardHolder" ngModel required>
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" ngModel required placeholder="MM/YY">
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" ngModel required>
+        </div>
+
+        <!-- Payment Button -->
+        <button type="submit" (click)="processPayment()">Pay Now</button>
+    </div>
+</div>

@@ -28,7 +28,7 @@ export class UserComponent implements OnInit {
   click() {
     alert(this.movie);
     this.router.navigate(['time']);
-    this.movie = "hi";
+    // this.movie = "hi";
   }
 
   logout() {

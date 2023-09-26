@@ -12,6 +12,9 @@ import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import { RegisterComponent } from './register/register.component';
 import { SeatsComponent } from './seats/seats.component';
+import { TimeComponent } from './time/time.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PaymentSuccessComponent } from './payment-success/payment-success.component';
 // import { DashboardComponent } from './dashboard/dashboard.component';
 
 
@@ -24,7 +27,10 @@ import { SeatsComponent } from './seats/seats.component';
     // SignupComponent,
     UserComponent,
     RegisterComponent,
-    SeatsComponent
+    SeatsComponent,
+    TimeComponent,
+    PaymentComponent,
+    PaymentSuccessComponent
     // DashboardComponent
   ],
 

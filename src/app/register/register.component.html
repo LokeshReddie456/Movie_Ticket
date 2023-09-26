@@ -1,15 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+    <style>
+        /* Reset default styles and set font */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Apply a glassmorphic gradient background to the body */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+                url('https://cdn.pixabay.com/photo/2017/06/02/22/01/dog-2367414_1280.png') center/cover no-repeat;
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Adjust the opacity here */
+        }
+
+        /* Center the container horizontally and vertically */
+        .form {
+            background: rgba(255, 255, 255, 0.2);
+            /* Adjust the transparency */
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Style the content within the container */
+        .box {
+            margin-top: 30px;
+            color: #5E5EF1;
+        }
+
+        /* Style input boxes */
+        .input-boxes {
+            margin: 16px;
+        }
+
+        .input-boxes input {
+            width: 200px;
+            height: 40px;
+            border-radius: 20px;
+            text-align: center;
+            border: none;
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s;
+        }
+
+        .input-boxes input:hover {
+            background: rgba(0, 0, 0, 0.4);
+            width: 230px;
+        }
+
+        /* Style the Register button */
+        .Button-boxes {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            width: 150px;
+            height: 40px;
+            border: none;
+            background: linear-gradient(135deg, #007BFF, #00BFFF);
+            color: white;
+            font-size: 17px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style the "Already have an Account?" link */
+        p a {
+            text-decoration: none;
+            font-size: 22px;
+            color: rgb(19, 50, 2);
+            box-sizing: border-box;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        p a:hover {
+            color: #0722f2b7;
+        }
+    </style>
 </head>
+
 <body>
     <form class="form" (ngSubmit)="onSubmit()">
         <div class="box">
             <h2 class="heading">Register Form</h2>
 
             <div class="input-boxes">
-                <input type="text" placeholder="Firstname" [(ngModel)]="registerForm.firstname" name="firstname" required>
+                <input type="text" placeholder="Firstname" [(ngModel)]="registerForm.firstname" name="firstname"
+                    required>
             </div>
 
             <div class="input-boxes">
@@ -21,7 +121,8 @@
             </div>
 
             <div class="input-boxes">
-                <input type="password" placeholder="Set password" [(ngModel)]="registerForm.password" name="password" required>
+                <input type="password" placeholder="Set password" [(ngModel)]="registerForm.password" name="password"
+                    required>
             </div>
 
             <div class="Button-boxes">
@@ -32,4 +133,5 @@
         </div>
     </form>
 </body>
+
 </html>
